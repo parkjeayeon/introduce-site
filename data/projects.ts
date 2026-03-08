@@ -1,7 +1,7 @@
 export type TypeProject = {
   title: string;
   id: string;
-  type: 'company' | 'toy';
+  type: 'company' | 'toy' | 'side';
   meta: {
     device: '반응형 웹' | 'PC' | '모바일' | '데스크탑 앱';
     contribution: string;
@@ -22,6 +22,37 @@ export type TypeProject = {
 };
 
 export const data: TypeProject[] = [
+  {
+    title: 'K-Fate',
+    id: 'k-fate',
+    type: 'side',
+    meta: {
+      contribution: '20%',
+      others: ['Postgresql'],
+      device: '반응형 웹',
+      frameworks: ['Spring-boot', 'NextJS', 'NestJS'],
+      developers: '7명',
+    },
+    duration: '2025.12.30 ~2026.2.23',
+    libraries: [],
+    introduction: [
+      '생년월일 외 개인정보를 입력하면 사주결과를 보여주는 서비스',
+    ].join('\n'),
+    functions: [],
+    role: [],
+    links: [
+      {
+        label: '보기',
+        href: 'https://k-fate.com',
+      },
+    ],
+    images: [
+      '/projects/k-fate/img01.png',
+      '/projects/k-fate/img02.png',
+      '/projects/k-fate/img03.png',
+      '/projects/k-fate/img04.png',
+    ],
+  },
   {
     title: 'Introduce Site',
     id: 'introduce-site',

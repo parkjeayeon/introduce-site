@@ -39,6 +39,9 @@ export function ContentCard({
     case 'end':
       className = 'bg-green-200';
       break;
+    case 'side':
+      className = 'bg-yellow-200';
+      break;
   }
 
   return (
@@ -93,6 +96,9 @@ function CardTitle({ type, title }: { type: ProfessionalsT; title: string }) {
       break;
     case 'profile':
       emoji = '🖥️';
+      break;
+    case 'side':
+      emoji = '🐒';
       break;
   }
 

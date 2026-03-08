@@ -3,7 +3,13 @@ import { Github } from '@/components/assets';
 import { ExternalLinkIcon } from 'lucide-react';
 import LinkButton from '@/app/(introduce)/professional/components/LinkButton';
 
-export type ProfessionalsT = 'profile' | 'toy' | 'company' | 'end' | 'study';
+export type ProfessionalsT =
+  | 'profile'
+  | 'toy'
+  | 'company'
+  | 'end'
+  | 'study'
+  | 'side';
 
 export type TypeProfessional = {
   title: string;
@@ -48,6 +54,27 @@ export const data: TypeProfessional[] = [
         {/*  icon={<ExternalLinkIcon className={'h-4 w-4 text-red-600'} />}*/}
         {/*/>*/}
       </>
+    ),
+  },
+  {
+    type: 'side',
+    title: 'K-Fate',
+    description: 'Side Project',
+    content: (
+      <>
+        <div className={'mb-3 font-medium'}>🗝️ Spring-boot, NextJS</div>
+        <p>
+          스위트웹 12기 - 생년월일 등 개인정보 입력시 사주결과를 보여주는 서비스
+        </p>
+      </>
+    ),
+    side: (
+      <LinkButton
+        link={`/projects#k-fate`}
+        icon={<ExternalLinkIcon className={'h-4 w-4 text-red-600'} />}
+        label={'2025.12.30 ~ 2026.02.23'}
+        align={'right'}
+      />
     ),
   },
   {

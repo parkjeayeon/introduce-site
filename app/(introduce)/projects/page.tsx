@@ -42,11 +42,14 @@ export default async function ProjectPage() {
                           'bg-red-500 hover:bg-red-600',
                         item.type === 'toy' &&
                           'bg-secondary hover:bg-secondary-100',
+                        item.type === 'side' && 'bg-blue-600 hover:bg-blue-500',
                       )}
                     >
                       {item.type === 'company'
                         ? 'Company Project'
-                        : 'Toy Project'}
+                        : item.type === 'toy'
+                          ? 'Toy Project'
+                          : 'Side Project'}
                     </Badge>
                   </div>
                 </div>

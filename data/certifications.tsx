@@ -4,6 +4,7 @@ import Udemy from '@/public/assets/udemy.svg';
 import Nodejs from '@/public/assets/nodejs.svg';
 import IconJava from '@/public/assets/java.svg';
 import IconTest from '@/public/assets/test.svg';
+import IconClaude from '@/public/assets/claude.svg';
 
 export type TypeCertification = {
   icon: ReactElement;
@@ -13,6 +14,13 @@ export type TypeCertification = {
   isModal: boolean;
 };
 export const data: TypeCertification[] = [
+  {
+    icon: <IconClaude className={'h-[30px] w-[30px]'} />,
+    title: '클로드 코드 완벽 마스터: AI 개발 워크플로우 기초부터 실전까지',
+    description: '인프런',
+    link: 'https://www.inflearn.com/certificate/498580-339317-15040101',
+    isModal: false,
+  },
   {
     icon: <IconSql className={'h-[30px] w-[30px]'} />,
     title: 'SQLD',

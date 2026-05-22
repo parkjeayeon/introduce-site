@@ -56,6 +56,27 @@ export const data: TypeProfessional[] = [
       </>
     ),
   },
+    {
+        type: 'study',
+        title: '로드 코드 완벽 마스터: AI 개발 워크플로우 기초부터 실전까지',
+        description: '인프런',
+        content: (
+            <>
+                <div className={'mb-3 font-medium'}>
+                    {'🗝️ Claude Code'}
+                </div>
+                <span className={'font-semibold'}>20시간 53분</span>
+            </>
+        ),
+        side: (
+            <LinkButton
+                link={`https://www.inflearn.com/certificate/498580-339317-15040101`}
+                icon={<ExternalLinkIcon className={'h-4 w-4 text-red-600'} />}
+                label={'2024.04 - 2024.09'}
+                align={'right'}
+            />
+        ),
+    },
   {
     type: 'side',
     title: 'K-Fate',

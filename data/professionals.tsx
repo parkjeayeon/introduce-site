@@ -72,7 +72,7 @@ export const data: TypeProfessional[] = [
             <LinkButton
                 link={`https://www.inflearn.com/certificate/498580-339317-15040101`}
                 icon={<ExternalLinkIcon className={'h-4 w-4 text-red-600'} />}
-                label={'2024.04 - 2024.09'}
+                label={'2025.03 - 2025.05'}
                 align={'right'}
             />
         ),
